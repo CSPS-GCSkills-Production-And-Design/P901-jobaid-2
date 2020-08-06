@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
@@ -42,105 +42,7 @@
     </header>
     <main role="main" property="mainContentOfPage">
         <div id="dynamic_content" class="container">
-            <style>
-            details[open] summary~* {
-                animation: sweep .5s ease-in-out;
-            }
-
-            @keyframes sweep {
-                0% {
-                    opacity: 0;
-                    margin-left: -10px
-                }
-
-                100% {
-                    opacity: 1;
-                    margin-left: 0px
-                }
-            }
-
-            a:visited,
-            a {
-                color: #163C66;
-            }
-
-            table a:hover,
-            th:hover a,
-            th:hover {
-                background-color: black;
-                color: white;
-            }
-
-            th[scope=col] {
-                width: 15rem;
-                font-size: 14px;
-                font-weight: 200;
-                text-transform: uppercase;
-            }
-
-            td,
-            th {
-                padding: 0.25em;
-            }
-
-            th:not([scope=row]),
-            td {
-                text-align: center;
-            }
-
-            table {
-                page-break-inside: avoid;
-            }
-
-            .Method {
-                background-color: #163C66;
-                color: white;
-                text-transform: uppercase;
-                vertical-align: bottom;
-                text-align: left;
-                width: 25rem;
-            }
-
-            .Education {
-                background-color: #FFFFE0;
-            }
-
-            .Occupational {
-                background-color: #E8EFCE;
-            }
-
-            .Experience {
-                background-color: #DBEDEC;
-            }
-
-            .Knowledge {
-                background-color: #F5DBC8;
-            }
-
-            .Competencies {
-                background-color: #D8CBC0;
-            }
-
-            .Abilities {
-                background-color: #F5B8B8;
-            }
-
-            .Personal {
-                background-color: #E1E6EB;
-            }
-
-
-            .checkedBox {
-                background-color: #E2EFD9;
-                font-size: 2em;
-            }
-
-            @media print {
-              .printBlock{
-                page-break-inside: avoid;
-              }
-            }
-            </style>
+            <style></style>
             <h1>Assessment Methods</h1>
             <h2>Choosing Assessment Methods and Tools</h2>
             <h3>Key Points</h3>
@@ -159,38 +61,39 @@
                 <li>In general, job-specific knowledge can be acquired once on the job, with the exception of expertise-driven professions. When designing knowledge assessment tools, it is important to only expect a knowledge level that is required on the first day of the job. Managers may design their own assessment tools or use existing tools, including standardized tests from the <a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/human-resources-toolbox/personnel-psychology-centre.html">PSC Personnel Psychology Centre</a>.</li>
             </ul>
             <table border=1>
+                <caption><span class="text-uppercase">Legend</span>: &#128504;<span class="wb-inv">Checked</span> Indicates that the qualifications identified may be most effectively assessed using these common assessment methods. </caption>
                 <thead>
                     <tr>
                         <th class="Method">
                             <p>Assessment Methods</p>
                         </th>
                         <th class="Education" scope="col">
-                            <p><a href="#Education">Education</a></p>
+                            <p><a class="wb-lbx" href="#Education">Education</a></p>
                         </th>
                         <th class="Occupational" scope="col">
-                            <p><a href="#Occupational">Occupational Certification</a></p>
+                            <p><a class="wb-lbx" href="#Occupational">Occupational Certification</a></p>
                         </th>
                         <th class="Experience" scope="col">
-                            <p><a href="#Experience">Experience</a></p>
+                            <p><a class="wb-lbx" href="#Experience">Experience</a></p>
                         </th>
                         <th class="Knowledge" scope="col">
-                            <p><a href="#Knowledge">Knowledge</a></p>
+                            <p><a class="wb-lbx" href="#Knowledge">Knowledge</a></p>
                         </th>
                         <th class="Competencies" scope="col">
-                            <p><a href="#Competencies">Competencies</a></p>
+                            <p><a class="wb-lbx" href="#Competencies">Competencies</a></p>
                         </th>
                         <th class="Abilities" scope="col">
-                            <p><a href="#Abilities">Abilities</a></p>
+                            <p><a class="wb-lbx" href="#Abilities">Abilities</a></p>
                         </th>
-                        <th class="Personal" scope="col">
-                            <p><a href="#Personal">Personal Suitability</a></p>
+                        <th class="PersonalSuitability" scope="col">
+                            <p><a class="wb-lbx" href="#Personal">Personal Suitability</a></p>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">
-                            <p><strong><a href="#">Application/Resume</a></strong></p>
+                            <p><strong><a href="#Resume" class="wb-lbx">Application/Resume</a></strong></p>
                         </th>
                         <td class="checkedBox">
                             <p>&#128504;<span class="wb-inv">Checked</span></p>
@@ -208,199 +111,11 @@
                     </tr>
                     <tr>
                         <th scope="row">
-                            <p><strong><a href="#">Screening Questions/Cover Letter</a></strong></p>
+                            <p><strong><a href="#Screening" class="wb-lbx">Screening Questions/Cover Letter</a></strong></p>
                         </th>
                         <td class="checkedBox">
                             <p>&#128504;<span class="wb-inv">Checked</span></p>
                         </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Work Samples</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Written Assessments</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Candidate Achievement Record (CAR)</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Structured Interview </a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Simulation/Role-Play</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">In-Basket Exercises/Case Studies</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Group Assessment</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Reference Checks</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                        <td class="checkedBox">
-                            <p>&#128504;<span class="wb-inv">Checked</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p><strong><a href="#">Performance Reviews</a></strong></p>
-                        </th>
-                        <td>&nbsp;</td>
                         <td class="checkedBox">
                             <p>&#128504;<span class="wb-inv">Checked</span></p>
                         </td>
@@ -422,7 +137,195 @@
                     </tr>
                     <tr>
                         <th scope="row">
-                            <p><strong><a href="#">Personal Knowledge</a></strong></p>
+                            <p><strong><a href="#Work" class="wb-lbx">Work Samples</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Written" class="wb-lbx">Written Assessments</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Achievement" class="wb-lbx">Candidate Achievement Record (CAR)</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Structured" class="wb-lbx">Structured Interview </a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Simulation" class="wb-lbx">Simulation/Role-Play</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Basket" class="wb-lbx">In-Basket Exercises/Case Studies</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Assessment" class="wb-lbx">Group Assessment</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Reference" class="wb-lbx">Reference Checks</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#Performance" class="wb-lbx">Performance Reviews</a></strong></p>
+                        </th>
+                        <td>&nbsp;</td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                        <td class="checkedBox">
+                            <p>&#128504;<span class="wb-inv">Checked</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p><strong><a href="#PersonalKnowledge" class="wb-lbx">Personal Knowledge</a></strong></p>
                         </th>
                         <td class="checkedBox">
                             <p>&#128504;<span class="wb-inv">Checked</span></p>
@@ -448,6 +351,438 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="printBlock QualificationDescription">
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Education">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Education</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>Education refers to academic, vocational, or technical studies and training acknowledged through a credential or other official documentation from or accepted by a recognized Canadian educational institution.</p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Occupational">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Occupational Certification</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>The possession of, or eligibility for, credentials such as a license, certificate, registration, letter, paper or other documents that constitute acceptable evidence of occupational competencies. For example, Chartered Professional Accountant (CPA), Professional Engineer, Member of the Bar, Registered Nurse, Transport Canada or Canadian Coast Guard (CCG) Certificate of Competency for Navigation, etc.</p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Experience">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Experience</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>Experience includes previous employment or professional skills a person has acquired through working or volunteering. The work experience sought is based on the immediate and future needs of the position, and on skills the appointee needs to accomplish the work and perform in the job.</p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Knowledge">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Knowledge</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>What information the person needs to know to do the job.</p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Competencies">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Competencies</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>Competencies are generally used to express &ldquo;characteristics of an individual which underlie performance or behaviour at work&rdquo; that are required now or in the future. You can find examples of competencies here: <a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/competencies.html">Examples of competencies</a>.</p>
+                        <p><strong>Core competencies</strong>: For performance management purposes, employees in the public service are evaluated based on the following four <a href="https://intranet.canada.ca/hr-rh/ptm-grt/pm-gr/pmc-dgr/comp-eng.asp">core competencies</a>:</p>
+                        <ul>
+                            <li>Demonstrating integrity and respect</li>
+                            <li>Thinking things through</li>
+                            <li>Working effectively with others</li>
+                            <li>Showing initiative and being action-oriented</li>
+                        </ul>
+                        <p>Although the global score generated by the performance management system does not apply to qualifications, the competencies may be appropriate, and the performance information may be useful in an assessment.</p>
+                        <p><strong>Functional competencies</strong>: are applicable to employees in a particular type of work, such as client service agents, financial specialists, program analysts or human resources professionals.</p>
+                        <p><strong>Technical competencies</strong>: are applicable to particular jobs.</p>
+                        <p><strong>Key leadership competency profile</strong>: make up the basis for selection (e.g. essential qualifications), learning and development, performance and talent management of executives and other senior leaders in the public service. You can find information on the key leadership competency profile here <a href="https://www.canada.ca/en/treasury-board-secretariat/services/professional-development/key-leadership-competency-profile.html">Key Leadership Competencies</a></p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Abilities">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Abilities</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>An ability is a natural talent or acquired proficiency that allows an individual to perform a particular job or task successfully now or in the future. It does not need to be associated with experience. Examples include:</p>
+                        <ul>
+                            <li>Ability to work under pressure</li>
+                            <li>Ability to communicate effectively orally</li>
+                            <li>Ability to establish project priorities and meet deadlines</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Personal">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Personal Suitability</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p>These are behaviours required to effectively perform the duties of a particular job, such as:</p>
+                        <ul>
+                            <li>Discretion</li>
+                            <li>Initiative</li>
+                            <li>Flexibility</li>
+                            <li>Effective interpersonal relations</li>
+                            <li>Being a team player</li>
+                            <li>Dependability</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="printBlock AssessmentsMethods">
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Resume">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Application/Resume </h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description</strong>
+                                <ul>
+                                    <li>Typically includes information such as biographical data, education, occupational certification, achievements, experience, demonstrated skills and abilities, employment history, and volunteer activities.&nbsp;</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights</strong>
+                                <ul>
+                                    <li>Good to evaluate: Education, Occupation Certification, Experience</li>
+                                    <li>Pay attention to embellished experience; verify statements with applicant and/or references.</li>
+                                    <li>If foreign education, ensure that Canadian standards have been met (see Foreign Credential Recognition requirements).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources</strong>
+                                <ul>
+                                    <li><strong><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/reviewing-past-accomplishments-experience.html">Reviewing past accomplishments and experience</a></strong></li>
+                                    <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/staffing/qualification-standards/core.html"><strong>Qualification standards </strong><strong>&ndash; Foreign Credential Recognition</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Screening">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Screening Questions and Cover Letter</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>Questions related to merit criteria (e.g. education, experience etc.) may be included as part of the application process.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights</strong>
+                                <ul>
+                                    <li>Good to evaluate: Education, Occupation Certification, Experience, Knowledge, Competencies, Abilities, Personal Suitability</li>
+                                    <li>Cover letters or essay questions allow for a response in a longer format within a particular framework to respond to a specific topic or question.</li>
+                                    <li>Behaviour-based questions are common; for example, &rdquo;Explain where, when, and how frequently you had to do &lsquo;X.&rsquo;&rdquo;</li>
+                                    <li>The use of multiple questions to assess a single qualification may also allow for a deeper response than a yes/no question will. (see Public Service Resourcing System Support Centre)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong></li>
+                        </ul>
+                        <p><strong>Public Service Resourcing System Support Centre</strong></p>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Work">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Work Samples</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>Previous work that demonstrates the candidate&rsquo;s abilities or achievements. Usually in writing but may be in other mediums such as drawings, videos, blogs, etc.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights</strong>
+                                <ul>
+                                    <li>Good to evaluate: Experience, Knowledge, Abilities, Personal Suitability</li>
+                                    <li>Can support information gathered from other methods.</li>
+                                    <li>Must determine the extent of the candidate&rsquo;s actual contribution.</li>
+                                    <li>Take into account that the work and standards may have occurred in a different context.</li>
+                                    <li>Consider that not all candidates may have the authority to share work samples.</li>
+                                    <li>This assessment method is the best representation of work requirements, which further removes potential barriers based on the assessment itself. It also allows early dialogue on workplace accommodations</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources</strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/reviewing-past-accomplishments-experience.html"><strong>Reviewing past accomplishments and experience</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Written">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Written Assessments</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>Paper-and-pencil, online or computer-based tests consist of assessment tools in which questions are read by candidates and answered in writing.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights</strong>
+                                <ul>
+                                    <li>Good to evaluate: Experience, Knowledge, Abilities, Competencies, Personal Suitability</li>
+                                    <li>Permits uniform evaluation of a broad range of factors.</li>
+                                    <li>Efficient way to assess many candidates simultaneously or accommodate for specific functional needs.</li>
+                                    <li>Questions may include behaviour based, situational as well as short-answer, long-answer, multiple-choice and true/false.</li>
+                                    <li>May be a take-home test (unsupervised) or in-person (supervised) or online (unsupervised).</li>
+                                    <li>Recommend following up an unsupervised test with one that is supervised.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/paper-pencil-instruments-efficient-method-assessment.html"><strong>Paper-and-pencil instruments: An efficient method of assessment</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/public-service-hiring-guides/best-practices-unsupervised-testing.html"><strong>Best practices for unsupervised testing</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/public-service-hiring-guides/testing-public-service-canada.html"><strong>Testing in the Public Service of Canada</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Achievement">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Candidate Achievement Record (CAR)</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>D</strong><strong>escription </strong>
+                                <ul>
+                                    <li>A tool that assesses competencies through self-reported examples of past performance and work-related achievements. Candidates are provided a template to describe situations in which they have demonstrated behaviours associated with various competencies.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Competencies</li>
+                                    <li>There is a formal CAR available from the Personal Psychology Centre to assess key leadership competencies.</li>
+                                    <li>This tool may be replicated in-house to assess departmental competencies including core competencies.</li>
+                                    <li>A departmental CAR may be best used for internal candidates versus external candidates.</li>
+                                    <li>Typically, the behavioural indicators are provided to the candidates and it is requested that they provide the name of a validator(s) for their examples.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/human-resources-toolbox/personnel-psychology-centre/assessment-counselling-services/candidate-achievement-record.html"><strong>The Candidate Achievement Record (CAR)</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Structured">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Structured Interview</h2>
+                    </header>
+                    <div class="modal-body">
+                        <p><strong>Structured Interview </strong></p>
+                        <ul>
+                            <li><strong>Description</strong>
+                                <ul>
+                                    <li>Questions that are prepared in advance that are linked to the requirements of the position with established criteria and expected responses.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights</strong>
+                                <ul>
+                                    <li>Good to evaluate: Knowledge, Experience, Abilities, Competencies, Personal Suitability</li>
+                                    <li>Permits explanation, elaboration of specific examples and clarification of information gathered from other methods.</li>
+                                    <li>Opportunity to provide candidate information about the job and answer their questions, which may reduce drop-off rates of qualified persons.</li>
+                                    <li>Flexibilities in conducting in-person, by phone, virtually, and could be pre-recorded.</li>
+                                    <li>Types of questions usually include behavioural and/or situational.</li>
+                                    <li>Interviews may also take an unstructured format, however. This is best used for selection once candidates have been found to be qualified.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources</strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/structured-selection-interview-sound-method-assessment.html"><strong>The Structured Selection Interview: A Sound Method of Assessment</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/information-human-resources-specialists/module-1-video-assessment.html"><strong>Video Assessment: Video Recruitment Toolkit</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/public-service-hiring-guides/appointment-processes-how-conduct-interviews.html"><strong>Appointment processes: how to conduct interviews</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Simulation">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Simulation and Role Play</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>A practical demonstration of qualifications in a real-life situation either independently (simulation) or with interaction with one or more board members (role-play).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Knowledge, Abilities, Competencies, Personal Suitability</li>
+                                    <li>Effective for evaluating qualifications in which the candidate may not have prior experience.</li>
+                                    <li>Allows for flexibility since the assessors can probe and gain clarification.</li>
+                                    <li>Consider the time and cost to develop and to assess, as they may be more complex depending on the qualification.</li>
+                                    <li>Simulations, or situational exercises, are designed to place candidates in realistic situations to lead them to demonstrate one or more qualities relevant to the position.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources</strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/developing-simulations.html"><strong>Developing Simulations</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Basket">
+                    <header class="modal-header">
+                        <h2 class="modal-title">In-Basket Exercise and Case Study</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>In-basket exercises include background information (e.g. an organization&rsquo;s mission statement and organizational chart) that is provided to the candidate along with documents normally found in the in-basket of someone in the position, such as memos, letters, and reports. A case study usually provides all the details of an actual or fictional situation in which the candidate has to address specific questions.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Knowledge, Abilities, Competencies, Personal Suitability</li>
+                                    <li>The PSC Personnel Psychology Centre has in-basket exercises that are standardized and can aid in selecting as well as identifying training and development needs.</li>
+                                    <li>You may create your own in-basket exercise or case study and incorporate it into the overall written assessment and/or interview portion of the assessment.</li>
+                                    <li>Permits the candidate to be evaluated based on a real-life situation.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/human-resources-toolbox/personnel-psychology-centre/consultation-test-services/public-service-commission-tests.html"><strong>Public Service Commission Tests</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Assessment">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Group Assessment</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>Candidates are grouped together and either interviewed simultaneously as they take turns responding to interview questions (group interview) or are given a limited amount of time to discuss or resolve an issue with no other instruction or intervention from the assessors observing them (leaderless group discussion).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Abilities, Competencies, Personal Suitability</li>
+                                    <li>Group assessments are most useful when they are part of a multi-method assessment strategy, which provides a comprehensive and reliable understanding of candidates&rsquo; competencies.</li>
+                                    <li>May be beneficial to assess multiple candidates at the interview stage and when qualifications are difficult to assess using other methods.</li>
+                                    <li>A real-life situation (role-play) where several candidates take on different roles may also be an option.</li>
+                                    <li>Candidates appreciate the job-realistic approach.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/public-service-hiring-guides/best-practices-for-using-group-assessments-for-selection.html"><strong>Best Practices for Using Group Assessments for Selection</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Reference">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Reference Checks</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>Reference checks may consist of contacting current and former managers, supervisors, colleagues and clients to clarify and complete information already collected. The intent is to obtain information directly from the persons who could provide insight into the candidate&rsquo;s experience, ability, competency and personal suitability.&nbsp;</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Experience, Abilities, Competencies, Personal Suitability</li>
+                                    <li>There are flexibilities in that checks may be conducted in person, by phone, in writing or as a recorded reference check.</li>
+                                    <li>The focus should be on observed behaviours rather than opinions or impressions.</li>
+                                    <li>Consider who may possess the information you are seeking &ndash; it may not be the candidate&rsquo;s manager.</li>
+                                    <li>Are the examples, recent and relevant and is what they are telling you a &rdquo;one;off&rdquo; or a consistent pattern of behaviour?</li>
+                                    <li>Often used only as a verification but this may be a rich source of information.</li>
+                                    <li>Consider the nature and relationship as well as the duration.</li>
+                                    <li>Limitations may exist for external applicants, candidates returning from leave, and referees failing or unable to provide information that may be relevant.</li>
+                                    <li>Full-circle reference checks or 360&deg;-feedback are methods in which managers, clients, colleagues and subordinates are contacted to provide more inclusive reviews of the candidate&rsquo;s qualifications.</li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/checking-references-window-into-past.html"><strong>Reference Checks: A Window into the Past</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/public-service-hiring-guides/structured-reference-checks.html"><strong>Structured reference checks </strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/human-resources-toolbox/personnel-psychology-centre/assessment-counselling-services/360-feedback-instruments-services.html"><strong>360&deg;Feedback Instruments and Services</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/reviewing-past-accomplishments-experience.html"><strong>Reviewing past accomplishments and experience</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="Performance">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Performance Reviews</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description </strong>
+                                <ul>
+                                    <li>The formal evaluation of performance against work objectives and competencies (expected behaviours). This may include core competencies as well as technical and functional competencies.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Experience, Abilities, Competencies, Personal Suitability</li>
+                                    <li>A direct link must be established between the skills assessed in the performance review and the qualifications for the position.</li>
+                                    <li>May be best when used in conjunction with other assessment methods for internal processes.</li>
+                                    <li>Consider the level of the substantive position and the department&rsquo;s objectives and expected behaviours and results.</li>
+                                    <li>Although a candidate may excel in their current position, it does not necessarily mean they are qualified for the next position.</li>
+                                    <li>Consider that not all candidates have a current or recent evaluation available (e.g. external candidates, some federal departments, and both RCMP and Canadian Armed Forces members may be internal candidates that do not use the same systems as the broader public service).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/appointment-framework/guides-tools-appointment-framework/performance-reviews-appointment-process.html"><strong>Performance Reviews in the Appointment Process</strong></a></li>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/reviewing-past-accomplishments-experience.html"><strong>Reviewing past accomplishments and experience</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mfp-hide modal-dialog modal-content overlay-def" id="PersonalKnowledge">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Personal Knowledge</h2>
+                    </header>
+                    <div class="modal-body">
+                        <ul>
+                            <li><strong>Description</strong>
+                                <ul>
+                                    <li>The use of assessment board members&rsquo; and hiring manager&rsquo;s firsthand observations or experience of the candidate that identifies demonstrated qualities and behaviours relevant to the qualifications assessed.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Highlights </strong>
+                                <ul>
+                                    <li>Good to evaluate: Education, Experience, Knowledge, Abilities, Competencies, Personal Suitability</li>
+                                    <li>The fact-based information that is documented for the process and may include positive or negative that can support or negate information gathered from other tools.</li>
+                                    <li>Consider the frequency and context of the demonstration of the qualification (or failure to demonstrate). Ensure to seek out a balanced evaluation.</li>
+                                    <li>It is similar to a reference check and performance appraisal; you are encouraged to use all information available to obtain a well-rounded view of a candidate.</li>
+                                    <li>Avoid using opinions or general impressions and focus on the merit criteria.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Resources </strong>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/en/public-service-commission/services/staffing-assessment-tools-resources/human-resources-specialists-hiring-managers/management-toolkit/assessing-competence-series/reviewing-past-accomplishments-experience.html"><strong>Reviewing past accomplishments and experience</strong></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
             <div class="printBlock">
                 <h2><strong>Considerations</strong></h2>
                 <p>When choosing an assessment method, you may consider the following factors:</p>

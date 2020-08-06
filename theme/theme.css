@@ -89,14 +89,9 @@ header {
   background-size: contain; }
 
 .note {
-  padding-left: 2em;
+  padding-left: 2rem;
   position: relative;
   margin-left: 1em; }
-
-  .note ul{
-    margin-left:4em;
-    padding-inline-start: 40px;
-  }
 
 .note:before {
   content: " ";
@@ -114,10 +109,12 @@ header {
 body.wb-modal > #wb-tphp,
 body.wb-modal > header,
 body.wb-modal > main,
-body.wb-modal > footer, body.wb-modal summary {
+body.wb-modal > footer,
+body.wb-modal summary {
   visibility: visible !important; }
 
-h1, .h1 {
+h1,
+.h1 {
   margin-top: 0;
   margin-bottom: 38px;
   color: #AB3638; }
@@ -133,13 +130,15 @@ h1, .h1 {
   font-family: sans-serif;
   color: #163c66; }
 
-.Order, .noOrder {
+.Order,
+.noOrder {
   position: relative;
   border-radius: 16px;
   margin: 2rem;
   padding: 2rem; }
 
-.Order:before, .noOrder:before {
+.Order:before,
+.noOrder:before {
   content: " ";
   position: absolute;
   width: 100%;
@@ -170,10 +169,12 @@ h1, .h1 {
   list-style: none;
   position: relative; }
 
-.entitlements ul, .entitlements ol {
+.entitlements ul,
+.entitlements ol {
   position: relative; }
 
-.entitlements ul:before, .entitlements ol:before {
+.entitlements ul:before,
+.entitlements ol:before {
   content: " ";
   position: absolute;
   border-top: 2px solid #163c66;
@@ -194,7 +195,8 @@ h1, .h1 {
   border-radius: 100%;
   border: 2px solid #163c66; }
 
-.Statutory, .Regulatory {
+.Statutory,
+.Regulatory {
   padding: 2rem;
   position: relative;
   left: 4rem;
@@ -220,7 +222,7 @@ h1, .h1 {
     display: block !important; }
 
   a.wb-lbx {
-    display: none; }
+    text-decoration: none; }
 
   .entitlements {
     display: block; }
@@ -239,18 +241,22 @@ h1, .h1 {
     width: 100%;
     margin: 0 auto; }
 
-  .entitlements ul:before, .entitlements ol:before {
+  .entitlements ul:before,
+  .entitlements ol:before {
     border: 0px solid transparent; }
 
-  .Statutory > li, .Regulatory > li {
+  .Statutory > li,
+  .Regulatory > li {
     padding: 0;
     list-style: none;
     position: relative; }
 
-  .entitlements ul, .entitlements ol {
+  .entitlements ul,
+  .entitlements ol {
     position: relative; }
 
-  .entitlements ul:before, .entitlements ol:before {
+  .entitlements ul:before,
+  .entitlements ol:before {
     content: none;
     position: absolute;
     border-top: 2px solid #163c66;
@@ -271,19 +277,21 @@ h1, .h1 {
     border-radius: 100%;
     border: 2px solid #163c66; }
 
-  .Statutory, .Regulatory {
+  .Statutory,
+  .Regulatory {
     padding: 2rem;
     position: relative;
     left: 0;
     border-radius: 16px; }
 
-  ol, ul {
+  ol,
+  ul {
     padding-inline-start: 0; }
 
   .overlay-def .modal-title {
     padding: 0; }
 
-  a[href]:after {
+  a[href]:not([href^='#']):after {
     content: " [" attr(href) "]"; }
 
   @page {
@@ -295,5 +303,91 @@ h1, .h1 {
       content: "last: " string(heading, last); } }
   h2 {
     string-set: heading content(); } }
+a:visited,
+a {
+  color: #163C66; }
+
+table a:hover,
+th:hover a,
+th:hover {
+  background-color: black;
+  color: white; }
+
+th[scope=col] {
+  width: 15rem;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+td,
+th {
+  padding: 0.25em; }
+
+th:not([scope=row]),
+td {
+  text-align: center; }
+
+table {
+  page-break-inside: avoid; }
+
+.Method {
+  background-color: #163C66;
+  color: white;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  text-align: left;
+  width: 25rem; }
+
+.Education {
+  background-color: #FFFFE0; }
+
+.Occupational {
+  background-color: #E8EFCE; }
+
+.Experience {
+  background-color: #DBEDEC; }
+
+.Knowledge {
+  background-color: #F5DBC8; }
+
+.Competencies {
+  background-color: #D8CBC0; }
+
+.Abilities {
+  background-color: #F5B8B8; }
+
+.Personal {
+  background-color: #E1E6EB; }
+
+.checkedBox {
+  background-color: #E2EFD9;
+  font-size: 2em; }
+
+caption {
+  caption-side: bottom; }
+
+@media print {
+  .QualificationDescription:before {
+    content: "Qualification Description";
+    font-size: 1.5em; }
+
+  .AssessmentsMethods:before {
+    content: "Assessment Methods";
+    font-size: 1.5em; }
+
+  .AssessmentsMethods, .QualificationDescription {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.1in;
+    margin-bottom: .5in; }
+
+  .modal-body {
+    padding: .25in; }
+
+  .mfp-hide {
+    display: inline-block !important; }
+
+  .printBlock {
+    page-break-inside: avoid; } }
 
 /*# sourceMappingURL=theme.css.map */
