@@ -1,4 +1,4 @@
-@import "./mixins/_mixins.scss";
+﻿@import "./mixins/_mixins.scss";
 @import "./_vars.scss";
 @import "./_core.scss";
 @import "./_content.scss";
@@ -186,7 +186,7 @@ h1,
     }
 
     a.wb-lbx {
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .entitlements {
@@ -271,28 +271,18 @@ h1,
         padding: 0;
     }
 
-    a[href]:not([href^='#']):after {
+    a.external:after {
         content: " ["attr(href)"]";
+        background: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: unset;
+        height: unset;
+        overflow: unset;
+        display: inline-block;
+        margin-left: initial;
     }
 
-    @page {
-
-        @top-left {
-            content: "first: "string(heading, first);
-        }
-
-        @top-center {
-            content: "start: "string(heading, start);
-        }
-
-        @top-right {
-            content: "last: "string(heading, last);
-        }
-    }
-
-    h2 {
-        string-set: heading content()
-    }
 
 }
 
@@ -379,26 +369,43 @@ caption {
 
 @media print {
 
-    .QualificationDescription:before {
-        content:"Qualification Description";
-        font-size:1.5em;
-    }
-    
-    .AssessmentsMethods:before{
-        content:"Assessment Methods";
-        font-size:1.5em;
+    .noprint {
+        display: none !important;
     }
 
-    .AssessmentsMethods,.QualificationDescription{
-        border: 1px solid black;
-        border-radius:15px;
-        padding:0.1in;
-        margin-bottom:.5in;
+    .QualificationDescription:before {
+        content: "Qualification Description";
+        font-size: 1.5em;
     }
+    [lang="fr"] .QualificationDescription:before {
+        content: "Description de la qualification ";
+    }
+
+    .AssessmentsMethods:before {
+        content: "Assessment Methods";
+        font-size: 1.5em;
+    }
+
+    [lang="fr"] .AssessmentsMethods:before {
+        content: "Méthodes d’évaluation";
+    }
+
+    .AssessmentsMethods,
+    .QualificationDescription {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 0.1in;
+        margin-bottom: .5in;
+    }
+
     .modal-body {
-    padding: .25in;
-}
-    .mfp-hide{display:inline-block!important}
+        padding: .25in;
+    }
+
+    .mfp-hide {
+        display: inline-block !important
+    }
+
     .printBlock {
         page-break-inside: avoid;
     }

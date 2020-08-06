@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: white; }
 
@@ -291,18 +292,16 @@ h1,
   .overlay-def .modal-title {
     padding: 0; }
 
-  a[href]:not([href^='#']):after {
-    content: " [" attr(href) "]"; }
-
-  @page {
-    @top-left {
-      content: "first: " string(heading, first); }
-    @top-center {
-      content: "start: " string(heading, start); }
-    @top-right {
-      content: "last: " string(heading, last); } }
-  h2 {
-    string-set: heading content(); } }
+  a.external:after {
+    content: " [" attr(href) "]";
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: unset;
+    height: unset;
+    overflow: unset;
+    display: inline-block;
+    margin-left: initial; } }
 a:visited,
 a {
   color: #163C66; }
@@ -367,15 +366,25 @@ caption {
   caption-side: bottom; }
 
 @media print {
+  .noprint {
+    display: none !important; }
+
   .QualificationDescription:before {
     content: "Qualification Description";
     font-size: 1.5em; }
+
+  [lang="fr"] .QualificationDescription:before {
+    content: "Description de la qualification "; }
 
   .AssessmentsMethods:before {
     content: "Assessment Methods";
     font-size: 1.5em; }
 
-  .AssessmentsMethods, .QualificationDescription {
+  [lang="fr"] .AssessmentsMethods:before {
+    content: "Méthodes d’évaluation"; }
+
+  .AssessmentsMethods,
+  .QualificationDescription {
     border: 1px solid black;
     border-radius: 15px;
     padding: 0.1in;
